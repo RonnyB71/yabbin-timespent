@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: dotnet build src/Yabbin.TimeSpent.sln --configuration Release --no-restore
       - name: Test
-        run: dotnet test src/Yabbin.TimeSpent.sln --logger trx;LogFileName=test-results.trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+        run: dotnet test src/Yabbin.TimeSpent.sln --logger "trx" --results-directory "TestResults-${{ matrix.dotnet-version }}"
       - name: Upload dotnet test results
         uses: actions/upload-artifact@v2
         with:
