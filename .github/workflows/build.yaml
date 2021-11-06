@@ -17,7 +17,7 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore src/Yabbin.TimeSpent.sln
       - name: Build
         run: dotnet build src/Yabbin.TimeSpent.sln --configuration Release --no-restore
       - name: Test
