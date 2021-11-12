@@ -1,13 +1,11 @@
-using Xunit;
+namespace Yabbin.TimeSpent.Api.Tests;
 
-namespace Yabbin.TimeSpent.Api.Tests
+public class CanaryTests
 {
-    public class CanaryTests
+    [Fact]
+    public void Pip()
     {
-        [Fact]
-        public void Pip()
-        {
-            Assert.True(true);
-        }
+        Assert.True(true);
     }
 }
+
