@@ -2,7 +2,7 @@ name: "Terraform Deploy"
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   terraform:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
