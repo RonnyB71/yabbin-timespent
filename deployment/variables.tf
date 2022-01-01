@@ -1,3 +1,8 @@
+variable "agent_client_id" {}
+variable "agent_client_secret" {}
+variable "subscription_id" {}
+variable "tenant_id" {}
+
 variable "name" {
   type        = string
   description = "Location of the azure resource group."
