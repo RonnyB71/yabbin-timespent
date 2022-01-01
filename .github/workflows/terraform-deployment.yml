@@ -12,13 +12,13 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@main
 
-      - name: "Set working directory"
-        id: workingdir
-        run: terraform -chdir=deployment apply
-
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
+      - name: "Set working directory"
+        id: workingdir
+        run: terraform -chdir=deployment apply
+        
       - name: "Terraform Format"
         id: fmt
         run: terraform fmt
