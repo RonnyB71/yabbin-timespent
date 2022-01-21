@@ -11,6 +11,11 @@ jobs:
     defaults:
       run:
         working-directory: ./deployment
+    env:
+      TF_VAR_agent_client_id: ${{ secrets.TF_VAR_agent_client_id }}
+      TF_VAR_agent_client_secret: ${{ secrets.TF_VAR_agent_client_secret }}
+      TF_VAR_subscription_id: ${{ secrets.TF_VAR_subscription_id }}
+      TF_VAR_tenant_id: ${{ secrets.TF_VAR_tenant_id }}
 
     steps:
       - name: "Checkout"
