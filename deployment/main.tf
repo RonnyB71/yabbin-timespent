@@ -19,10 +19,10 @@ terraform {
 provider "azurerm" {
   features {}
 
-  client_id = "${var.agent_client_id}"
-  client_secret = "${var.agent_client_secret}"
-  subscription_id = "${var.subscription_id}"
-  tenant_id = "${var.tenant_id}"
+  client_id = "${var.AGENT_CLIENT_ID}"
+  client_secret = "${var.AGENT_CLIENT_SECRET}"
+  subscription_id = "${var.SUBSCRIPTION_ID}"
+  tenant_id = "${var.TENANT_ID}"
 }
 
 resource "azurerm_resource_group" "default" {
