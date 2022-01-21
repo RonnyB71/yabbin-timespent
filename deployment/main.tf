@@ -11,10 +11,6 @@ terraform {
         storage_account_name = "tfstate24fzv"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
-
-        use_msi              = true
-        subscription_id      = "3e046851-8543-4f76-9d25-c13abd522af0"
-        tenant_id            = "cd0026d8-283b-4a55-9bfa-d0ef4a8ba21c"
     }
 
   required_version = ">= 0.14.9"
