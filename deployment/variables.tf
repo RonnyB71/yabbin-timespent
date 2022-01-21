@@ -1,8 +1,8 @@
-variable "client_id" {
+variable "agent_client_id" {
   type        = "string"
 }
 
-variable "client_secret" {
+variable "agent_client_secret" {
   type        = "string"
 }
 
