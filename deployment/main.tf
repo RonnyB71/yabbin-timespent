@@ -11,6 +11,12 @@ terraform {
         storage_account_name = "tfstate24fzv"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
+
+        client_id = "${var.agent_client_id}"
+        client_secret = "${var.agent_client_secret}"
+        subscription_id = "${var.subscription_id}"
+        tenant_id = "${var.tenant_id}"
+        
     }
 
   required_version = ">= 0.14.9"
