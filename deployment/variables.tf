@@ -1,16 +1,16 @@
-variable "AGENT_CLIENT_ID" {
+variable "agent_client_id" {
   type        = string
 }
 
-variable "AGENT_CLIENT_SECRET" {
+variable "agent_client_secret" {
   type        = string
 }
 
-variable "SUBSCRIPTION_ID" {
+variable "subscription_id" {
   type        = string
 }
 
-variable "TENANT_ID" {
+variable "tenant_id" {
   type        = string
 }
 
