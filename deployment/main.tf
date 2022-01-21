@@ -6,6 +6,12 @@ terraform {
       version = "~> 2.65"
     }
   }
+  backend "azurerm" {
+        resource_group_name  = "timespent-prod-rg"
+        storage_account_name = "tfstate24fzv"
+        container_name       = "tfstate"
+        key                  = "terraform.tfstate"
+    }
 
   required_version = ">= 0.14.9"
 }
